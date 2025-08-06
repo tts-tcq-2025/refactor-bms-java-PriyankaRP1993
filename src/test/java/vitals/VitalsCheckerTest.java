@@ -5,8 +5,8 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.AfterEach;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
-
-// import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 class VitalsCheckerTest {
 
@@ -127,4 +127,5 @@ class VitalsCheckerTest {
         assertTrue(output.contains("Pulse Rate is out of range!"));
     }
 }
+
 
